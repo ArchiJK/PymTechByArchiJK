@@ -1,0 +1,82 @@
+# Items
+item.shrink_disc.name=Schrumpfdisk
+item.grow_disc.name=Wachstumsdisk
+item.regulator.name=Regulator
+item.ant_antenna.name=Ameisenantenne
+item.filter.name=Filter
+item.emp_communication_device.name=EMP Kommunikationsgerät
+item.shrink_size_coil.name=Schrumpfspule
+item.growth_size_coil.name=Wachstumsspule
+item.shrunken_structure.name=Geschrumpfte Struktur
+item.shrunken_suit.name=Geschrumpfter Anzug
+
+
+# Blocks
+tile.structure_shrinker.name=Struktur Schrumpfer
+tile.blue_sand.name=Blauer Sand
+tile.blue_sandstone.default.name=Blauer Sandstein
+tile.blue_sandstone.chiseled.name=Gemeißelter blauer Sandstein
+tile.blue_sandstone.smooth.name=Glatter blauer Sandstein
+tile.blue_sandstone_stairs.name=Blaue Sandsteintreppe
+tile.blue_sandstone_slab.name=Blaue Sandsteinstufe
+
+
+# Suits
+pymtech.suit.ant_man.name=Ant-Man
+pymtech.suit.ant_man.desc=Version 1
+item.ant_man_helmet.name=Ant-Mans Helm
+item.ant_man_chestplate.name=Ant-Mans Anzug
+item.ant_man_legs.name=Ant-Mans Hose
+item.ant_man_boots.name=Ant-Mans Schuhe
+
+pymtech.suit.ant_man_2.name=Ant-Man
+pymtech.suit.ant_man_2.desc=Version 2
+item.ant_man_2_helmet.name=Ant-Mans Helm
+item.ant_man_2_chestplate.name=Ant-Mans Anzug
+item.ant_man_2_legs.name=Ant-Mans Hose
+item.ant_man_2_boots.name=Ant-Man's Boots
+
+pymtech.suit.ant_man_3.name=Ant-Man
+pymtech.suit.ant_man_3.desc=Version 3
+item.ant_man_3_helmet.name=Ant-Mans Helm
+item.ant_man_3_chestplate.name=Ant-Mans Anzug
+item.ant_man_3_legs.name=Ant-Mans Hose
+item.ant_man_3_boots.name=Ant-Mans Schuhe
+
+pymtech.suit.wasp.name=Wasp
+pymtech.suit.wasp.desc=Version 2
+item.wasp_helmet.name=Wasps Helm
+item.wasp_chestplate.name=Wasps Anzug
+item.wasp_legs.name=Wasps Hose
+item.wasp_boots.name=Wasps Schuhe
+
+
+# Fluids
+fluid.shrink_pym_particles=Schrumpf Pym-Partikel
+fluid.grow_pym_particles=Wachstums Pym-Partikel
+
+
+# Commands
+commands.quantumrealm.success.self=Sandt sich in die Quantenebene
+commands.quantumrealm.success.other=Sandt %s in die Quantenebene
+commands.quantumrealm.usage=/quantumrealm <Entity>
+
+# Abilities
+pymtech.abilities.pym_particle_size.name=Pym-Partikel
+pymtech.abilities.regulator.name=Regulator
+pymtech.abilities.shrink_suit.name=Anzug schrumpfen
+
+# Misc
+itemGroup.tabPymTech=Pym Tech
+pymtech.info.shrink=Schrumpfen
+pymtech.info.grow=Wachsen
+pymtech.info.not_enough_shrink_pp=§cDu hast nicht genug Schrumpf Pym-Partikel!
+pymtech.info.not_enough_grow_pp=§cDu hast nicht genug Wachstums Pym-Partikel!
+pymtech.info.infinite=Unendlich
+pymtech.info.save=Speichern
+pymtech.info.bounding_box=Begrenzung: %s
+pymtech.info.on=AN
+pymtech.info.off=AUS
+pymtech.info.reset=Zurücksetzen
+pymtech.info.size_display=Größe: %sx
+death.attack.suffocate=%s erstack

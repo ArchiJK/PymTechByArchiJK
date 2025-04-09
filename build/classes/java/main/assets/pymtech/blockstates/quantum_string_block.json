@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "brightness=0": { "model": "pymtech:quantum_string_block_0" },
+		"brightness=1": { "model": "pymtech:quantum_string_block_1" },
+		"brightness=2": { "model": "pymtech:quantum_string_block_2" },
+		"brightness=3": { "model": "pymtech:quantum_string_block_3" }
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "result": {
+    "item": "pymtech:blue_sandstone",
+    "data": 2
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:blue_sandstone",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "pymtech:blue_sandstone",
+      "data": 0
+    }
+  }
+}

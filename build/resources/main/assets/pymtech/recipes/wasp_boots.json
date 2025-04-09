@@ -1,0 +1,33 @@
+{
+  "result": {
+    "item": "pymtech:wasp_boots"
+  },
+  "pattern": [
+    "B B",
+    "R R"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:wasp_boots",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_blue",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "lucraftcore:tri_polymer_blue"
+    },
+    "R": {
+      "item": "lucraftcore:tri_polymer_red"
+    }
+  },
+  "group": "pymtech:wasp"
+}

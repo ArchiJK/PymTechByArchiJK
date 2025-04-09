@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="928df984-810a-4aec-93b8-0a47f71d6f25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/local_history.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/AlimerCraftModVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/ElementsAlimerMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/ability/AbilityTimeLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/ability/AbilityTimeWarp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/ability/Procedure/ProcedureAbilityReciveTimeLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/ability/Procedure/ProcedureAbilityReciveTimeWarp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/ability/Procedure/ProcedureTimeLoopEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/ModBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/block/OreDictionaryInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/block/custom/MutagenBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/AbilityTogglePowerTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityBackstabTeleport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityInvulnerability.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityMagneticShield.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityStepBackTeleport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityTimeRegen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityTotemOfUndyingAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/abilities/ability/AbilityVampirism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/powers/AHSuperpowers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/powers/SuperpowerAlimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/world/generate/BlockTestOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/world/generate/GenerateOre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/addonpack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/blockstates/mutagen_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/extractor_recipes/alimer_injection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/lang/en_us.lang" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/lang/ru_ru.lang" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/block/mutagen_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/mutagen_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_axe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_pickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_shovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_sword.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/block/blocks/mutagen_block.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/block/blocks/mutagen_block_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/block/blocks/mutagen_block_1.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/block/blocks/mutagen_block_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/alimercraft/ice_ground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/alimercraft/savedeath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/alimercraft/sphere_shield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/alimercraft/tpback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/archi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/archi_fly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/archi_shield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/iceshield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/lightning_shuriken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/telekinesis_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/telekinesis_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icon/sun_addons/teleport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/gui/superpower_icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/AHIconHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/AHIconHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/ArchiHeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/AlimerCraft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/handlers/AHConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/handlers/AHConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/handlers/AHLCUConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/handlers/GenericEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/handlers/GenericEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/EnumInfinityStone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemSoulStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemSoulStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemSpaceStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemSpaceStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemTimeStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemTimeStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemWinterStone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/infinity/items/ItemWinterStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/init/Flax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/init/Flax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/init/ModelRegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/init/ModelRegistrationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/init/RegistryUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/AHMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/AHMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/AHTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/AHTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/ItemBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/ItemBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/RegistrationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/RegistrationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/StoneItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/items/StoneItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/network/packets/ArchiPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/network/packets/ArchiPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/AHSuperpowers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/Abilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/hero/archiheroes/superpowers/SuperpowerAnbanan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/alimercrafts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/blockstates/red_lantern_power_battery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/lang/en_us.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/lang/ru_ru.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/block/red_power_battery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/custom/mindstone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/custom/mindstone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/custom/soulstone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/custom/soulstone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/custom/timestone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/custom/timestone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/custom/winterstone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/custom/winterstone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_mind_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_mind_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_power_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_power_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_reality_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_reality_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_soul_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_soul_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_space_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_space_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/ah_time_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/ah_time_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/first_item.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/first_item.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/red_lantern_ring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_axe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_boots.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_chestplate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_helmet.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/vibranium_leggings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_pickaxe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_shovel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/vibranium_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/models/item/winter_stone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/models/item/winter_stone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/recipes/vibranium_axe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/recipes/vibranium_axe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/recipes/vibranium_pickaxe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/recipes/vibranium_pickaxe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/recipes/vibranium_shovel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/recipes/vibranium_shovel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/recipes/vibranium_sword.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/recipes/vibranium_sword.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/arminst/vibranium/vibranium_axe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/arminst/vibranium/vibranium_axe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/arminst/vibranium/vibranium_pickaxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/arminst/vibranium/vibranium_pickaxe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/arminst/vibranium/vibranium_shovel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/arminst/vibranium/vibranium_shovel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/arminst/vibranium/vibranium_sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/arminst/vibranium/vibranium_sword.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/ring/red/redlantern_ring9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/striped_ingot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/striped_ingot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/archiheroes/textures/items/winterstone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/alimercraft/textures/items/winterstone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PymTechByArchiJK" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PymTechByArchiJK" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PymTechByArchiJK" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="forgegradle" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Testinf" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2IlARew8Ls97x6wfikzofpS4CQ3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Minecraft Client.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlimerCraft [genIntellijRuns].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArchiHeroes [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ForgeWorkspaceSetup-1.12.2-standalone [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ForgeWorkspaceSetup-1.12.2-standalone [setupDecompWorkspace].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PymTechByArchiJK [setupCiWorkspace].executor&quot;: &quot;Run&quot;,
+    &quot;Project.color&quot;: &quot;4c5a48&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MazaF/Desktop/PymTechByArchiJK/src/main/java/lucraft/mods/pymtech/dimensions/quantumvoid&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\java\lucraft\mods\pymtech\dimensions\quantumvoid" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\java\lucraft\mods\pymtech\dimensions" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\resources" />
+      <recent name="C:\Users\MazaF\OneDrive\Робочий стіл\AlimerCraft\src\main\resources\assets\alimercraft" />
+      <recent name="C:\Users\MazaF\OneDrive\Робочий стіл\AlimerCraft\src\main\resources\assets\alimercraft\models\item" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\java\lucraft\mods\pymtech\dimensions\quantumvoid" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\resources\assets\pymtech\textures\environment" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\resources\assets\pymtech\textures\environment\old" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\resources\assets\pymtech" />
+      <recent name="C:\Users\MazaF\Desktop\PymTechByArchiJK\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lucraft.mods.pymtech.dimensions.quantumvoid.dimension.biomes" />
+      <recent name="lucraft.mods.pymtech.dimensions.quantumvoid.deco" />
+      <recent name="lucraft.mods.pymtech.commands" />
+      <recent name="ua.hero.archiheroes.superpowers.abilities.ability" />
+      <recent name="ua.hero.archiheroes.superpowers.abilities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ForgeWorkspaceSetup-1.12.2-standalone [runClient]">
+    <configuration name="Minecraft Client" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="AlimerCraft" />
+      <option name="PROGRAM_PARAMETERS" value="--username=mazafaker070@outlook.com --password=Arthur313212324!" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eclipse" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../AlimerCraft\eclipse" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AlimerCraft_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="Minecraft Server" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <module name="AlimerCraft.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eclipse" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" factoryName="Application" name="Minecraft Server" type="Application">
+      <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../AlimerCraft\eclipse" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AlimerCraft_main" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="ArchiHeroes [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ForgeWorkspaceSetup-1.12.2-standalone [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ForgeWorkspaceSetup-1.12.2-standalone [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PymTechByArchiJK [setupCiWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupCiWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client" />
+      <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.PymTechByArchiJK [setupCiWorkspace]" />
+      <item itemvalue="Gradle.ArchiHeroes [build]" />
+      <item itemvalue="Gradle.ForgeWorkspaceSetup-1.12.2-standalone [runClient]" />
+      <item itemvalue="Gradle.ForgeWorkspaceSetup-1.12.2-standalone [setupDecompWorkspace]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ForgeWorkspaceSetup-1.12.2-standalone [runClient]" />
+        <item itemvalue="Gradle.ForgeWorkspaceSetup-1.12.2-standalone [setupDecompWorkspace]" />
+        <item itemvalue="Gradle.PymTechByArchiJK [setupCiWorkspace]" />
+        <item itemvalue="Gradle.ArchiHeroes [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <branch name="main" repository="C:\Users\JK\Desktop\ArchiHeroes" />
+      <changelist id="928df984-810a-4aec-93b8-0a47f71d6f25" name="Changes" comment="" />
+      <created>1670745790111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723544251546</updated>
+      <workItem from="1670745792110" duration="12405000" />
+      <workItem from="1670759891913" duration="1381000" />
+      <workItem from="1670770991797" duration="767000" />
+      <workItem from="1671790186775" duration="1215000" />
+      <workItem from="1671818464655" duration="4357000" />
+      <workItem from="1671835200293" duration="18627000" />
+      <workItem from="1671918531121" duration="4122000" />
+      <workItem from="1671969013741" duration="1996000" />
+      <workItem from="1671977997787" duration="3052000" />
+      <workItem from="1672155045569" duration="28000" />
+      <workItem from="1672315049493" duration="14000" />
+      <workItem from="1672350806945" duration="16686000" />
+      <workItem from="1672440400526" duration="3850000" />
+      <workItem from="1672572486418" duration="168000" />
+      <workItem from="1672572686341" duration="616000" />
+      <workItem from="1672573329960" duration="196000" />
+      <workItem from="1672573545636" duration="626000" />
+      <workItem from="1672575939720" duration="8761000" />
+      <workItem from="1672706093794" duration="3803000" />
+      <workItem from="1672786848220" duration="1985000" />
+      <workItem from="1672822807040" duration="10204000" />
+      <workItem from="1672833936672" duration="10710000" />
+      <workItem from="1672847808826" duration="4340000" />
+      <workItem from="1672915787093" duration="4250000" />
+      <workItem from="1672921778555" duration="5852000" />
+      <workItem from="1672946869296" duration="347000" />
+      <workItem from="1672947349779" duration="2336000" />
+      <workItem from="1672954215695" duration="3416000" />
+      <workItem from="1673039013588" duration="22055000" />
+      <workItem from="1723544249309" duration="3000" />
+    </task>
+    <task active="true" id="LOCAL-00001" summary="Testinf">
+      <branch name="main" repository="C:\Users\JK\Desktop\ArchiHeroes" original="true" />
+      <branch name="Testinf" repository="C:\Users\JK\Desktop\ArchiHeroes" />
+      <changelist id="928df984-810a-4aec-93b8-0a47f71d6f25" name="Changes" comment="" />
+      <created>1673105109343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723544251547</updated>
+      <workItem from="1673105131790" duration="10319000" />
+      <workItem from="1673365611494" duration="2859000" />
+      <workItem from="1673823064707" duration="15000" />
+      <workItem from="1716568757811" duration="3678000" />
+      <workItem from="1716576398623" duration="24914000" />
+      <workItem from="1718277838832" duration="8794000" />
+      <workItem from="1718357854591" duration="2814000" />
+      <workItem from="1718379669858" duration="4330000" />
+      <workItem from="1718447795246" duration="32000" />
+      <workItem from="1718546163109" duration="8801000" />
+      <workItem from="1721765675257" duration="69000" />
+      <workItem from="1721765948000" duration="5503000" />
+      <workItem from="1722079796250" duration="598000" />
+      <workItem from="1722111018477" duration="794000" />
+      <workItem from="1722202984852" duration="13046000" />
+      <workItem from="1722250656208" duration="3693000" />
+      <workItem from="1722281876437" duration="188000" />
+      <workItem from="1722283108154" duration="2605000" />
+      <workItem from="1722367817214" duration="624000" />
+      <workItem from="1722943120617" duration="810000" />
+      <workItem from="1722980428239" duration="111000" />
+      <workItem from="1723542531911" duration="1716000" />
+      <workItem from="1723544252318" duration="2901000" />
+      <workItem from="1723555553783" duration="13609000" />
+      <workItem from="1723743457689" duration="737000" />
+      <workItem from="1723830909345" duration="884000" />
+      <workItem from="1723975818200" duration="619000" />
+      <workItem from="1723999363423" duration="2689000" />
+      <workItem from="1724069205153" duration="856000" />
+      <workItem from="1724667129568" duration="3769000" />
+      <workItem from="1724752156074" duration="5700000" />
+      <workItem from="1724785701874" duration="5696000" />
+      <workItem from="1724831451592" duration="1691000" />
+      <workItem from="1724833655220" duration="421000" />
+      <workItem from="1724834086685" duration="1703000" />
+      <workItem from="1724836127963" duration="1504000" />
+      <workItem from="1724837788086" duration="30000" />
+      <workItem from="1724838422877" duration="15000" />
+      <workItem from="1725011677415" duration="722000" />
+      <workItem from="1729679555649" duration="2369000" />
+      <workItem from="1730762736100" duration="3133000" />
+      <workItem from="1731277859767" duration="114000" />
+      <workItem from="1743755448084" duration="657000" />
+      <workItem from="1743756114652" duration="5313000" />
+      <workItem from="1743808285448" duration="22646000" />
+      <workItem from="1743939180226" duration="17702000" />
+      <workItem from="1744011771431" duration="2640000" />
+      <workItem from="1744017160079" duration="18967000" />
+      <workItem from="1744056985120" duration="12720000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <option name="createChangelist" value="false" />
+    <option name="shelveChanges" value="true" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" FILE_PATH="coverage/ArchiHeroes$ForgeWorkspaceSetup_1_12_2_standalone__runClient_.ic" MODIFIED="1673116204992" NAME="ForgeWorkspaceSetup-1.12.2-standalone [runClient] Coverage Results" RUNNER="idea" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=blue_sandstone": { "model": "pymtech:blue_sandstone_normal" },
+		"type=chiseled_blue_sandstone": { "model": "pymtech:blue_sandstone_chiseled" },
+		"type=smooth_blue_sandstone": { "model": "pymtech:blue_sandstone_smooth" }
+    }
+}

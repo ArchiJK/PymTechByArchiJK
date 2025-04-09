@@ -1,0 +1,29 @@
+{
+  "result": {
+    "item": "pymtech:ant_antenna"
+  },
+  "pattern": [
+    "  I",
+    " I ",
+    "P  "
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_antenna",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:emp_communication_device",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "pymtech:emp_communication_device"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  }
+}

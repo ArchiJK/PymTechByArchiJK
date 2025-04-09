@@ -1,0 +1,37 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_legs"
+  },
+  "pattern": [
+    "RPR",
+    "S S",
+    "S S"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_legs",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_black",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "R": {
+      "item": "lucraftcore:tri_polymer_red"
+    },
+    "S": {
+      "item": "lucraftcore:tri_polymer_black"
+    }
+  },
+  "group": "pymtech:ant_man_1"
+}

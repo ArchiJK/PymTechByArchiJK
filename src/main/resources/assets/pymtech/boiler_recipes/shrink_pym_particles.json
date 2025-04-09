@@ -1,0 +1,25 @@
+{
+	"result": {
+		"fluid": "shrink_pym_particles",
+		"amount": 500
+	},
+  
+	"input_fluid": {
+		"fluid": "water",
+		"amount": 1000
+	},
+  
+	"energy": 2500,
+  
+	"ingredients": [
+		{
+			"item": "#INTERTIUMDUST"
+		},
+		{
+			"item": "#PALLADIUMDUST"
+		},
+		{
+			"item": "#REDSTONEDUST"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "pymtech:items/ant_man/chestplate",
+		"layer1": "pymtech:items/infinite_overlay"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "pymtech:items/wasp/chestplate"
+    },
+	"overrides": [
+		{
+			"predicate": {
+				"infinite": 1
+			},
+			"model": "pymtech:item/wasp_chest_infinite"
+		}
+	]
+}

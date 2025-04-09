@@ -1,0 +1,44 @@
+{
+  "result": {
+    "item": "pymtech:wasp_legs"
+  },
+  "pattern": [
+    "YPY",
+    "R R",
+    "B B"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:wasp_legs",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_yellow",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_blue",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "R": {
+      "item": "lucraftcore:tri_polymer_red"
+    },
+    "B": {
+      "item": "lucraftcore:tri_polymer_blue"
+    },
+    "Y": {
+      "item": "lucraftcore:tri_polymer_yellow"
+    }
+  },
+  "group": "pymtech:wasp"
+}

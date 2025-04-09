@@ -1,0 +1,46 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_3_helmet"
+  },
+  "pattern": [
+    "PSP",
+    "GHG",
+    "IFI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_3_helmet",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_helmet",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:filter",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "S": {
+      "item": "#SERVOMOTOR"
+    },
+    "F": {
+      "item": "pymtech:filter"
+    },
+    "G": {
+      "item": "#PANEGLASSRED"
+    },
+    "H": {
+      "item": "pymtech:ant_man_helmet"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  },
+  "group": "pymtech:ant_man_3"
+}

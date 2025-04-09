@@ -1,0 +1,138 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 4/5/25 12:46 PM
+Description: Unexpected error
+
+java.lang.NoClassDefFoundError: lucraft/mods/pymtech/helper/PTIconHelper
+	at lucraft.mods.pymtech.abilities.AbilityPymParticleSize.drawIcon(AbilityPymParticleSize.java:60)
+	at lucraft.mods.lucraftcore.superpowers.abilities.Ability.drawIcon(Ability.java:311)
+	at lucraft.mods.lucraftcore.superpowers.abilitybar.SuperpowerAbilityBarEntry.drawIcon(SuperpowerAbilityBarEntry.java:42)
+	at lucraft.mods.lucraftcore.util.abilitybar.AbilityBarHandler$Renderer.onRenderGameOverlay(AbilityBarHandler.java:188)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_7_Renderer_onRenderGameOverlay_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.client.GuiIngameForge.post(GuiIngameForge.java:914)
+	at net.minecraftforge.client.GuiIngameForge.renderExperience(GuiIngameForge.java:612)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:169)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1151)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1209)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:442)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+Caused by: java.lang.ClassNotFoundException: lucraft.mods.pymtech.helper.PTIconHelper
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 26 more
+Caused by: java.lang.NullPointerException
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at lucraft.mods.pymtech.abilities.AbilityPymParticleSize.drawIcon(AbilityPymParticleSize.java:60)
+	at lucraft.mods.lucraftcore.superpowers.abilities.Ability.drawIcon(Ability.java:311)
+	at lucraft.mods.lucraftcore.superpowers.abilitybar.SuperpowerAbilityBarEntry.drawIcon(SuperpowerAbilityBarEntry.java:42)
+	at lucraft.mods.lucraftcore.util.abilitybar.AbilityBarHandler$Renderer.onRenderGameOverlay(AbilityBarHandler.java:188)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_7_Renderer_onRenderGameOverlay_RenderGameOverlayEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.client.GuiIngameForge.post(GuiIngameForge.java:914)
+	at net.minecraftforge.client.GuiIngameForge.renderExperience(GuiIngameForge.java:612)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:169)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player376'/2466, l='MpServer', x=-469.47, y=63.00, z=1.22]]
+	Chunk stats: MultiplayerChunkCache: 573, 573
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (228,64,-108), Chunk: (at 4,4,4 in 14,-7; contains blocks 224,0,-112 to 239,255,-97), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 131989 game time, 131989 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 1 total; [EntityPlayerSP['Player376'/2466, l='MpServer', x=-469.47, y=63.00, z=1.22]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:461)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2889)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:471)
+	at net.minecraft.client.main.Main.main(Main.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:25)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_442, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 517884400 bytes (493 MB) / 966262784 bytes (921 MB) up to 3795845120 bytes (3620 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID          | Version      | Source                               | Signature |
+	|:------ |:----------- |:------------ |:------------------------------------ |:--------- |
+	| LCHIJA | minecraft   | 1.12.2       | minecraft.jar                        | None      |
+	| LCHIJA | mcp         | 9.42         | minecraft.jar                        | None      |
+	| LCHIJA | FML         | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | forge       | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | lucraftcore | 1.12.2-2.4.4 | LucraftCore-22057ced.jar             | None      |
+	| LCHIJA | jei         | 4.15.0.297   | jei_1.12.2-4.15.0.297.jar            | None      |
+	| LCHIJA | pymtech     | 1.12.2-1.0.3 | PymTech-1.1.0 Release Unofficial.jar | None      |
+
+	Loaded coremods (and transformers): 
+LucraftCoreCoreMod (LucraftCore-22057ced.jar)
+  lucraft.mods.lucraftcore.core.LCTransformer
+pymtech (PymTech-1.1.0 Release Unofficial.jar)
+  lucraft.mods.pymtech.core.PymTechClassTransformer
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 572.60' Renderer: 'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+	Launched Version: 1.12.2
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2 GL version 4.6.0 NVIDIA 572.60, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 24x Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz

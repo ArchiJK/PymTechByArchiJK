@@ -1,0 +1,125 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "https://maven.minecraftforge.net/"
+        }       
+		maven {
+            name = "github"
+            url = "https://github.com/juanmuscaria/maven/raw/master"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle2:[2.3-1.0.0-SNAPSHOT,)'
+    }
+}
+
+repositories {
+	flatDir {
+		dirs 'deps'
+	}
+}
+
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = mod_version
+group = mod_group
+archivesBaseName = mod_archives_name
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
+minecraft {
+	version = "1.12.2-14.23.5.2847"
+    mappings = "stable_39"
+	runDir = "eclipse"
+    
+	replace '@VERSION@', project.version
+	// makeObfSourceJar = false
+}
+
+processResources {
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version,
+		'mod_id': mod_id,
+		'mod_name': mod_name,
+		'mod_author': mod_author,
+		'mod_description': mod_description,
+		'mc_version': mc_version,
+		'mod_version': mod_version,
+		'mod_icon': mod_icon
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+repositories {
+    maven {
+        name = "DVS1 Maven FS"
+        url = "http://dvs1.progwml6.com/files/maven"
+    }
+    maven {
+        url "https://cursemaven.com"
+    }
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    //compile 'com.gitlab.lcoremodders:LucraftCore:22057cedd3'
+    //compile 'curse.maven:lucraft-core-230651:2841048'
+    //deobfCompile ('com.gitlab.lcoremodders:LucraftCore:5bec1f22')
+
+    //compile 'curse.maven:pymtech-316946:2706385' 316946
+    //compile 'curse.maven:lucraft-core-230651:3283571'
+    //compile 'curse.maven:heroesexpansion-267462:2762537'
+    //compile 'curse.maven:speedster-heroes-252318:2996769'
+    //compile 'curse.maven:pymtech-316946:2706385'
+    //compile 'curse.maven:endgame-addon-665792:3975622'
+    //compile 'curse.maven:lantern-corps-universe-291355:3705877'
+
+    //compile 'curse.maven:cavern2-285628:2984351'
+
+    //compile 'curse.maven:electroblobs-wizardry-265642:3679868'
+    compile 'com.gitlab.lcoremodders:LucraftCore:22057ced'
+    //compile 'com.gitlab.lcoremodders:HeroesExpansion:860f629ed4'
+    //compile 'com.gitlab.lcoremodders:SpeedsterHeroes:1e4b1fb951'
+
+    //compile 'com.gitlab.lcoremodders:LucraftCore:2c900f1a59'
+    //compile 'com.gitlab.lcoremodders:HeroesExpansion:bce809d27f'
+    //compile 'com.gitlab.lcoremodders:SpeedsterHeroes:8c7d5642e5'
+
+    //deobfCompile 'com.gitlab.lcoremodders:LucraftCore:2c900f1a59'
+    //deobfCompile 'com.gitlab.lcoremodders:HeroesExpansion:bce809d27f'
+    //deobfCompile 'com.gitlab.lcoremodders:SpeedsterHeroes:8c7d5642e5'
+    //deobfCompile ("com.gitlab.lcoremodders:LucraftCore:22057cedd3")
+    //deobfCompile files("lib/LucraftCore-1.12.2-2.2.4-deobf.jar")
+}
+
+jar {
+    manifest {
+        attributes 'FMLCorePlugin': 'lucraft.mods.pymtech.core.PymTechLoadingPlugin', 'FMLCorePluginContainsFMLMod': 'true'
+    }
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'deobf'
+    manifest {
+        attributes 'FMLCorePlugin': 'lucraft.mods.pymtech.core.PymTechLoadingPlugin', 'FMLCorePluginContainsFMLMod': 'true'
+    }
+}
+
+artifacts {
+    archives deobfJar
+}
+
+
+

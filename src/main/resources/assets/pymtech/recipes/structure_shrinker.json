@@ -1,0 +1,55 @@
+{
+  "result": {
+    "item": "pymtech:structure_shrinker"
+  },
+  "pattern": [
+    "PIP",
+    "BCX",
+    "PRP"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:structure_shrinker",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "minecraft:bucket",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:shrink_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:lv_capacitor",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:regulator",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "R": {
+      "item": "pymtech:regulator"
+    },
+    "C": {
+      "item": "pymtech:shrink_size_coil"
+    },
+    "X": {
+      "nbt": "{Energy:0}",
+      "item": "lucraftcore:lv_capacitor",
+      "type": "minecraft:item_nbt"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  }
+}

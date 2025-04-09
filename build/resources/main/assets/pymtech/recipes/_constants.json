@@ -1,0 +1,114 @@
+[
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "circuitAdvanced"
+    },
+    "name": "CIRCUITADVANCED"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "dustGlowstone"
+    },
+    "name": "DUSTGLOWSTONE"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "name": "DUSTREDSTONE"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIntertium"
+    },
+    "name": "INGOTINTERTIUM"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "name": "INGOTIRON"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "ingotLead"
+    },
+    "name": "INGOTLEAD"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "ingotPalladium"
+    },
+    "name": "INGOTPALLADIUM"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSilver"
+    },
+    "name": "INGOTSILVER"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetIron"
+    },
+    "name": "NUGGETIRON"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "paneGlassRed"
+    },
+    "name": "PANEGLASSRED"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "paneGlassYellow"
+    },
+    "name": "PANEGLASSYELLOW"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "plateIntertium"
+    },
+    "name": "PLATEINTERTIUM"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "plateIron"
+    },
+    "name": "PLATEIRON"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "plateSilver"
+    },
+    "name": "PLATESILVER"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "servoMotor"
+    },
+    "name": "SERVOMOTOR"
+  },
+  {
+    "ingredient": {
+      "type": "forge:ore_dict",
+      "ore": "wireCopper"
+    },
+    "name": "WIRECOPPER"
+  }
+]

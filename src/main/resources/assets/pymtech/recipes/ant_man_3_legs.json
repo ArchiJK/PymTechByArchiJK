@@ -1,0 +1,40 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_3_legs"
+  },
+  "pattern": [
+    "PIP",
+    "ILI",
+    "B B"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_3_legs",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_legs",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "lucraftcore:tri_polymer_red"
+    },
+    "B": {
+      "item": "#INGOTIRON"
+    },
+    "I": {
+      "item": "#PLATEIRON"
+    },
+    "L": {
+      "item": "pymtech:ant_man_legs"
+    }
+  },
+  "group": "pymtech:ant_man_3"
+}

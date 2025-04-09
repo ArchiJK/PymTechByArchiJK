@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "pymtech:blue_sand" },
+            { "model": "pymtech:blue_sand", "y": 90 },
+            { "model": "pymtech:blue_sand", "y": 180 },
+            { "model": "pymtech:blue_sand", "y": 270 }
+        ]
+    }
+}

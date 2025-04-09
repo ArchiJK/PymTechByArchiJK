@@ -1,0 +1,30 @@
+[
+	{
+		"ingredient": {
+			"type": "forge:ore_dict",
+			"ore": "dustIntertium"
+		},
+		"name": "INTERTIUMDUST"
+	},
+	{
+		"ingredient": {
+			"type": "forge:ore_dict",
+			"ore": "dustRedstone"
+		},
+		"name": "REDSTONEDUST"
+	},
+	{
+		"ingredient": {
+			"type": "forge:ore_dict",
+			"ore": "dustPalladium"
+		},
+		"name": "PALLADIUMDUST"
+	},
+	{
+		"ingredient": {
+			"type": "forge:ore_dict",
+			"ore": "dustLead"
+		},
+		"name": "LEADDUST"
+	}
+]

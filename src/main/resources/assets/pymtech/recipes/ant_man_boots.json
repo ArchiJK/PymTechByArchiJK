@@ -1,0 +1,33 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_boots"
+  },
+  "pattern": [
+    "G G",
+    "S S"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_boots",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_black",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_gray",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "lucraftcore:tri_polymer_black"
+    },
+    "G": {
+      "item": "lucraftcore:tri_polymer_gray"
+    }
+  },
+  "group": "pymtech:ant_man_1"
+}

@@ -1,0 +1,39 @@
+{
+  "result": {
+    "item": "pymtech:growth_size_coil"
+  },
+  "pattern": [
+    "WIW",
+    "PXP",
+    "WRW"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:growth_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "minecraft:dye",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "R": {
+      "item": "minecraft:dye",
+      "data": 15
+    },
+    "W": {
+      "item": "#WIRECOPPER"
+    },
+    "X": {
+      "item": "#INGOTPALLADIUM"
+    },
+    "I": {
+      "item": "#INGOTLEAD"
+    }
+  }
+}

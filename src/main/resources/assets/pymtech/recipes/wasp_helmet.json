@@ -1,0 +1,43 @@
+{
+  "result": {
+    "item": "pymtech:wasp_helmet"
+  },
+  "pattern": [
+    "APA",
+    "GPG",
+    "IFI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:wasp_helmet",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_antenna",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:filter",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "A": {
+      "item": "pymtech:ant_antenna"
+    },
+    "F": {
+      "item": "pymtech:filter"
+    },
+    "G": {
+      "item": "#PANEGLASSYELLOW"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  },
+  "group": "pymtech:wasp"
+}

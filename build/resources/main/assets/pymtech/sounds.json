@@ -1,0 +1,44 @@
+{
+	"helmet_opening": {
+		"category": "player",
+		"sounds": ["pymtech:helmet_opening"],
+		"subtitle": "subtitles.helmet_opening"
+	},
+	
+	"helmet_closing": {
+		"category": "player",
+		"sounds": ["pymtech:helmet_closing"],
+		"subtitle": "subtitles.helmet_closing"
+	},
+	
+	"shrink": {
+		"category": "player",
+		"sounds": ["pymtech:shrink"],
+		"subtitle": "subtitles.shrink"
+	},
+	
+	"grow": {
+		"category": "player",
+		"sounds": ["pymtech:grow"],
+		"subtitle": "subtitles.grow"
+	},
+	
+	"button": {
+		"category": "player",
+		"sounds": ["pymtech:button1", "pymtech:button2"],
+		"subtitle": "subtitles.button"
+	},
+	
+	"quantum_realm_enter": {
+		"category": "player",
+		"sounds": ["pymtech:quantum_realm_enter1", "pymtech:quantum_realm_enter2"],
+		"subtitle": "subtitles.quantum_realm_enter"
+	},
+	
+	"quantum_realm_leave": {
+		"category": "player",
+		"sounds": ["pymtech:quantum_realm_leave"],
+		"subtitle": "subtitles.quantum_realm_leave"
+	}
+
+}

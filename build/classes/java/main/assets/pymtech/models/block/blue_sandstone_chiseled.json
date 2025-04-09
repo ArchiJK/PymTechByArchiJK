@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "pymtech:blocks/blue_sandstone_top",
+        "side": "pymtech:blocks/blue_sandstone_carved"
+    }
+}

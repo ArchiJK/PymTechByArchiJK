@@ -1,0 +1,42 @@
+{
+  "result": {
+    "item": "pymtech:regulator"
+  },
+  "pattern": [
+    "NPN",
+    "SCG",
+    "NPN"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:regulator",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:shrink_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:growth_size_coil",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "S": {
+      "item": "pymtech:shrink_size_coil"
+    },
+    "C": {
+      "item": "#CIRCUITADVANCED"
+    },
+    "G": {
+      "item": "pymtech:growth_size_coil"
+    },
+    "N": {
+      "item": "#NUGGETIRON"
+    }
+  }
+}

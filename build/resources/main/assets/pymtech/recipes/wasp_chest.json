@@ -1,0 +1,58 @@
+{
+  "result": {
+    "item": "pymtech:wasp_chest"
+  },
+  "pattern": [
+    "YBY",
+    "XCX",
+    "IRI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:wasp_chest",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_yellow",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_blue",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "minecraft:bucket",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:shrink_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:regulator",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "R": {
+      "item": "pymtech:regulator"
+    },
+    "C": {
+      "item": "pymtech:shrink_size_coil"
+    },
+    "X": {
+      "item": "lucraftcore:tri_polymer_blue"
+    },
+    "Y": {
+      "item": "lucraftcore:tri_polymer_yellow"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  },
+  "group": "pymtech:wasp"
+}

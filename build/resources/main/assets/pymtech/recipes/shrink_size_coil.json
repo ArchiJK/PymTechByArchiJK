@@ -1,0 +1,34 @@
+{
+  "result": {
+    "item": "pymtech:shrink_size_coil"
+  },
+  "pattern": [
+    "WIW",
+    "PXP",
+    "WRW"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:shrink_size_coil",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEIRON"
+    },
+    "R": {
+      "item": "#DUSTREDSTONE"
+    },
+    "W": {
+      "item": "#WIRECOPPER"
+    },
+    "X": {
+      "item": "#INGOTPALLADIUM"
+    },
+    "I": {
+      "item": "#INGOTINTERTIUM"
+    }
+  }
+}

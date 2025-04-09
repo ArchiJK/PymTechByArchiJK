@@ -1,0 +1,47 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_3_chest"
+  },
+  "pattern": [
+    "PCP",
+    "PHP",
+    "IZI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_3_chest",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:growth_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_chest",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "lucraftcore:tri_polymer_red"
+    },
+    "C": {
+      "item": "pymtech:growth_size_coil"
+    },
+    "H": {
+      "item": "pymtech:ant_man_chest"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    },
+    "Z": {
+      "item": "#PLATEIRON"
+    }
+  },
+  "group": "pymtech:ant_man_3"
+}

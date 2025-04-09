@@ -1,0 +1,58 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_chest"
+  },
+  "pattern": [
+    "SBS",
+    "RCR",
+    "IXI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_chest",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_black",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "lucraftcore:tri_polymer_red",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "minecraft:bucket",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:shrink_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:regulator",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "R": {
+      "item": "lucraftcore:tri_polymer_red"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "S": {
+      "item": "lucraftcore:tri_polymer_black"
+    },
+    "C": {
+      "item": "pymtech:shrink_size_coil"
+    },
+    "X": {
+      "item": "pymtech:regulator"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  },
+  "group": "pymtech:ant_man_1"
+}

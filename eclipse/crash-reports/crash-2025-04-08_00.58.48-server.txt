@@ -1,0 +1,111 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 4/8/25 12:58 AM
+Description: Getting biome
+
+java.lang.NullPointerException: Getting biome
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:150)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:102)
+	at net.minecraft.world.biome.BiomeCache.getEntry(BiomeCache.java:37)
+	at net.minecraft.world.biome.BiomeCache.getBiome(BiomeCache.java:48)
+	at net.minecraft.world.biome.BiomeProvider.getBiome(BiomeProvider.java:74)
+	at net.minecraft.world.chunk.Chunk.getBiome(Chunk.java:1309)
+	at net.minecraft.world.World.getBiomeForCoordsBody(World.java:208)
+	at net.minecraft.world.WorldProvider.getBiomeForCoords(WorldProvider.java:481)
+	at net.minecraft.world.World.getBiome(World.java:197)
+	at lucraft.mods.pymtech.dimensions.quantumvoid.ChunkGeneratorQuantumRealm.populate(ChunkGeneratorQuantumRealm.java:62)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1094)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1065)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:169)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:183)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:236)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:831)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:150)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:102)
+	at net.minecraft.world.biome.BiomeCache.getEntry(BiomeCache.java:37)
+	at net.minecraft.world.biome.BiomeCache.getBiome(BiomeCache.java:48)
+	at net.minecraft.world.biome.BiomeProvider.getBiome(BiomeProvider.java:74)
+	at net.minecraft.world.chunk.Chunk.getBiome(Chunk.java:1309)
+
+-- Coordinates of biome request --
+Details:
+	Location: World: (-144,0,99568), Chunk: (at 0,0,0 in -9,6223; contains blocks -144,0,99568 to -129,255,99583), Region: (-1,194; contains chunks -32,6208 to -1,6239, blocks -512,0,99328 to -1,255,99839)
+Stacktrace:
+	at net.minecraft.world.World.getBiomeForCoordsBody(World.java:208)
+	at net.minecraft.world.WorldProvider.getBiomeForCoords(WorldProvider.java:481)
+	at net.minecraft.world.World.getBiome(World.java:197)
+	at lucraft.mods.pymtech.dimensions.quantumvoid.ChunkGeneratorQuantumRealm.populate(ChunkGeneratorQuantumRealm.java:62)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1094)
+	at net.minecraft.world.chunk.Chunk.populate(Chunk.java:1065)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:169)
+	at net.minecraft.server.management.PlayerChunkMapEntry.providePlayerChunk(PlayerChunkMapEntry.java:130)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:183)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:236)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player250'/257, l='New World', x=238.78, y=102.24, z=99950.69]]
+	Chunk stats: ServerChunkCache: 585 Drop: 0
+	Level seed: 7253020789545577752
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (0,0,0), Chunk: (at 0,0,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 0 game time, 0 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:831)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_442, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 293961840 bytes (280 MB) / 1083703296 bytes (1033 MB) up to 3795845120 bytes (3620 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 12, tcache: 94, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID          | Version      | Source                               | Signature |
+	|:------ |:----------- |:------------ |:------------------------------------ |:--------- |
+	| LCHIJA | minecraft   | 1.12.2       | minecraft.jar                        | None      |
+	| LCHIJA | mcp         | 9.42         | minecraft.jar                        | None      |
+	| LCHIJA | FML         | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | forge       | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | lucraftcore | 1.12.2-2.4.4 | LucraftCore-22057ced.jar             | None      |
+	| LCHIJA | jei         | 4.15.0.297   | jei_1.12.2-4.15.0.297.jar            | None      |
+	| LCHIJA | pymtech     | 1.12.2-1.0.3 | PymTech-1.1.0 Release Unofficial.jar | None      |
+
+	Loaded coremods (and transformers): 
+LucraftCoreCoreMod (LucraftCore-22057ced.jar)
+  lucraft.mods.lucraftcore.core.LCTransformer
+pymtech (PymTech-1.1.0 Release Unofficial.jar)
+  lucraft.mods.pymtech.core.PymTechClassTransformer
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player250'/257, l='New World', x=238.78, y=102.24, z=99950.69]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

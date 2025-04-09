@@ -1,0 +1,28 @@
+{
+  "result": {
+    "item": "pymtech:blue_sandstone_stairs",
+    "count": 4
+  },
+  "pattern": [
+    "X  ",
+    "XX ",
+    "XXX"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:blue_sandstone_stairs",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:blue_sandstone",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "pymtech:blue_sandstone",
+      "data": 32767
+    }
+  }
+}

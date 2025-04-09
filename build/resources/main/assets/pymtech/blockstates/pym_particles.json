@@ -1,0 +1,24 @@
+{
+    "forge_marker" : 1, 
+    "defaults" : {
+        "model" : "forge:fluid"
+    }, 
+
+    "variants" : {
+        "shrink_pym_particles" : [ 
+            {
+                "custom" : {
+                    "fluid" : "shrink_pym_particles"
+                }
+            }
+         ], 
+
+        "grow_pym_particles" : [ 
+            {
+                "custom" : {
+                    "fluid" : "grow_pym_particles"
+                }
+            }
+         ]
+    }
+}

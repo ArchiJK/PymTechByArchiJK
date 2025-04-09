@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 4/8/25 1:18 AM
+Description: Getting biome
+
+java.lang.NullPointerException: Getting biome
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:150)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:102)
+	at net.minecraft.world.biome.BiomeCache.getEntry(BiomeCache.java:37)
+	at net.minecraft.world.biome.BiomeCache.getBiome(BiomeCache.java:48)
+	at net.minecraft.world.biome.BiomeProvider.getBiome(BiomeProvider.java:74)
+	at net.minecraft.world.chunk.Chunk.getBiome(Chunk.java:1309)
+	at net.minecraft.world.World.getBiomeForCoordsBody(World.java:208)
+	at net.minecraft.world.WorldProvider.getBiomeForCoords(WorldProvider.java:481)
+	at net.minecraft.world.World.getBiome(World.java:197)
+	at net.minecraft.advancements.critereon.LocationPredicate.test(LocationPredicate.java:64)
+	at net.minecraft.advancements.critereon.LocationPredicate.test(LocationPredicate.java:39)
+	at net.minecraft.advancements.critereon.PositionTrigger$Instance.test(PositionTrigger.java:96)
+	at net.minecraft.advancements.critereon.PositionTrigger$Listeners.trigger(PositionTrigger.java:131)
+	at net.minecraft.advancements.critereon.PositionTrigger.trigger(PositionTrigger.java:80)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:492)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:150)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:102)
+	at net.minecraft.world.biome.BiomeCache.getEntry(BiomeCache.java:37)
+	at net.minecraft.world.biome.BiomeCache.getBiome(BiomeCache.java:48)
+	at net.minecraft.world.biome.BiomeProvider.getBiome(BiomeProvider.java:74)
+	at net.minecraft.world.chunk.Chunk.getBiome(Chunk.java:1309)
+
+-- Coordinates of biome request --
+Details:
+	Location: World: (244,73,254), Chunk: (at 4,4,14 in 15,15; contains blocks 240,0,240 to 255,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+Stacktrace:
+	at net.minecraft.world.World.getBiomeForCoordsBody(World.java:208)
+	at net.minecraft.world.WorldProvider.getBiomeForCoords(WorldProvider.java:481)
+	at net.minecraft.world.World.getBiome(World.java:197)
+	at net.minecraft.advancements.critereon.LocationPredicate.test(LocationPredicate.java:64)
+	at net.minecraft.advancements.critereon.LocationPredicate.test(LocationPredicate.java:39)
+	at net.minecraft.advancements.critereon.PositionTrigger$Instance.test(PositionTrigger.java:96)
+	at net.minecraft.advancements.critereon.PositionTrigger$Listeners.trigger(PositionTrigger.java:131)
+	at net.minecraft.advancements.critereon.PositionTrigger.trigger(PositionTrigger.java:80)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 182
+	Entity Name: Player281
+	Entity's Exact location: 244.00, 73.10, 254.00
+	Entity's Block location: World: (244,73,254), Chunk: (at 4,4,14 in 15,15; contains blocks 240,0,240 to 255,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:492)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:185)
+	at net.minecraftforge.fml.common.network.handshake.NetworkDispatcher$1.update(NetworkDispatcher.java:212)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:307)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@54d20d21
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:197)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:865)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_442, Temurin
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Temurin
+	Memory: 331381384 bytes (316 MB) / 1084227584 bytes (1034 MB) up to 3795845120 bytes (3620 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 12, tcache: 94, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2847 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID          | Version      | Source                               | Signature |
+	|:------ |:----------- |:------------ |:------------------------------------ |:--------- |
+	| LCHIJA | minecraft   | 1.12.2       | minecraft.jar                        | None      |
+	| LCHIJA | mcp         | 9.42         | minecraft.jar                        | None      |
+	| LCHIJA | FML         | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | forge       | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847.jar     | None      |
+	| LCHIJA | lucraftcore | 1.12.2-2.4.4 | LucraftCore-22057ced.jar             | None      |
+	| LCHIJA | jei         | 4.15.0.297   | jei_1.12.2-4.15.0.297.jar            | None      |
+	| LCHIJA | pymtech     | 1.12.2-1.0.3 | PymTech-1.1.0 Release Unofficial.jar | None      |
+
+	Loaded coremods (and transformers): 
+LucraftCoreCoreMod (LucraftCore-22057ced.jar)
+  lucraft.mods.lucraftcore.core.LCTransformer
+pymtech (PymTech-1.1.0 Release Unofficial.jar)
+  lucraft.mods.pymtech.core.PymTechClassTransformer
+	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player281'/182, l='New World', x=244.00, y=73.10, z=254.00]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

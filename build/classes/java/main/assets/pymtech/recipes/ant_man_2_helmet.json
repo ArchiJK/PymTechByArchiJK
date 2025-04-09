@@ -1,0 +1,43 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_2_helmet"
+  },
+  "pattern": [
+    "PPP",
+    "GHG",
+    "IFI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_2_helmet",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_helmet",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:filter",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATESILVER"
+    },
+    "F": {
+      "item": "pymtech:filter"
+    },
+    "G": {
+      "item": "#PANEGLASSRED"
+    },
+    "H": {
+      "item": "pymtech:ant_man_helmet"
+    },
+    "I": {
+      "item": "#INGOTSILVER"
+    }
+  },
+  "group": "pymtech:ant_man_2"
+}

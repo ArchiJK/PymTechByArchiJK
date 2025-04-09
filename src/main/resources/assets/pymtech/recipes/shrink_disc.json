@@ -1,0 +1,32 @@
+{
+  "result": {
+    "item": "pymtech:shrink_disc",
+    "count": 16
+  },
+  "pattern": [
+    " I ",
+    "IBI",
+    " I "
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:shrink_disc",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "forge:bucketfilled",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "B": {
+      "nbt": "{FluidName:\"shrink_pym_particles\",Amount:1000}",
+      "item": "forge:bucketfilled",
+      "type": "minecraft:item_nbt"
+    },
+    "I": {
+      "item": "#INGOTIRON"
+    }
+  }
+}

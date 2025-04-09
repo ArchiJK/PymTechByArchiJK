@@ -1,0 +1,32 @@
+{
+  "result": {
+    "item": "pymtech:filter"
+  },
+  "pattern": [
+    "IBI",
+    "BRB",
+    "IBI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:filter",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "minecraft:iron_bars",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "R": {
+      "item": "#PLATESILVER"
+    },
+    "I": {
+      "item": "#PLATEIRON"
+    }
+  }
+}

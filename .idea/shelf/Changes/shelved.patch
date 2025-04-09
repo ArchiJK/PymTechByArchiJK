@@ -1,0 +1,74 @@
+Index: src/main/java/ua/hero/archiheroes/handlers/AHLCUConfig.java
+===================================================================
+diff --git a/src/main/java/ua/hero/archiheroes/handlers/AHLCUConfig.java b/src/main/java/ua/hero/archiheroes/handlers/AHLCUConfig.java
+deleted file mode 100644
+--- a/src/main/java/ua/hero/archiheroes/handlers/AHLCUConfig.java	(revision 64be63fa63f3a01dede010f020c6144505c106d4)
++++ /dev/null	(revision 64be63fa63f3a01dede010f020c6144505c106d4)
+@@ -1,47 +0,0 @@
+-package ua.hero.archiheroes.handlers;
+-
+-import net.minecraftforge.common.config.Config;
+-import net.minecraftforge.common.config.ConfigManager;
+-import net.minecraftforge.common.config.Config.RangeInt;
+-import net.minecraftforge.common.config.Config.SlidingOption;
+-import net.minecraftforge.common.config.Config.Type;
+-import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+-
+-@Config(
+-        modid = "archiheroes"
+-)
+-public class AHLCUConfig {
+-    @SlidingOption
+-    @RangeInt(
+-            min = -1200,
+-            max = 1200
+-    )
+-    public static int RED_LANTERN_MIN_KARMA = 501;
+-    @SlidingOption
+-    @RangeInt(
+-            min = -1200,
+-            max = 1200
+-    )
+-    public static int RED_LANTERN_MAX_KARMA = 1000;
+-
+-    public AHLCUConfig() {
+-    }
+-
+-    @EventBusSubscriber(
+-            modid = "archiheroes"
+-    )
+-    private static class EventHandler {
+-        private EventHandler() {
+-        }
+-
+-        @SubscribeEvent
+-        public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
+-            if (event.getModID().equals("archiheroes")) {
+-                ConfigManager.sync("archiheroes", Type.INSTANCE);
+-            }
+-
+-        }
+-    }
+-}
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>buildscript {\r\n    repositories {\r\n        mavenCentral()\r\n        maven {\r\n            name = \"forge\"\r\n            url = \"https://maven.minecraftforge.net/\"\r\n        }       \r\n\t\tmaven {\r\n            name = \"github\"\r\n            url = \"https://github.com/juanmuscaria/maven/raw/master\"\r\n        }\r\n    }\r\n    dependencies {\r\n        classpath 'net.minecraftforge.gradle:ForgeGradle2:[2.3-1.0.0-SNAPSHOT,)'\r\n    }\r\n}\r\n\r\nrepositories {\r\n\tflatDir {\r\n\t\tdirs 'deps'\r\n\t}\r\n}\r\n\r\napply plugin: 'eclipse'\r\napply plugin: 'maven-publish'\r\napply plugin: 'net.minecraftforge.gradle.forge'\r\n\r\nversion = mod_version\r\ngroup = mod_group\r\narchivesBaseName = mod_archives_name\r\n\r\n[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'\r\nsourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'\r\n\r\nminecraft {\r\n\tversion = \"1.12.2-14.23.5.2847\"\r\n    mappings = \"stable_39\"\r\n\trunDir = \"eclipse\"\r\n    \r\n\treplace '@VERSION@', project.version\r\n\t// makeObfSourceJar = false\r\n}\r\n\r\nprocessResources {\r\n\r\n    from(sourceSets.main.resources.srcDirs) {\r\n        include 'mcmod.info'\r\n        expand 'version': project.version,\r\n\t\t'mod_id': mod_id,\r\n\t\t'mod_name': mod_name,\r\n\t\t'mod_author': mod_author,\r\n\t\t'mod_description': mod_description,\r\n\t\t'mc_version': mc_version,\r\n\t\t'mod_version': mod_version,\r\n\t\t'mod_icon': mod_icon\r\n    }\r\n\r\n    from(sourceSets.main.resources.srcDirs) {\r\n        exclude 'mcmod.info'\r\n    }\r\n}\r\n\r\nrepositories {\r\n    maven {\r\n        name = \"DVS1 Maven FS\"\r\n        url = \"http://dvs1.progwml6.com/files/maven\"\r\n    }\r\n    maven {\r\n        url \"https://cursemaven.com\"\r\n    }\r\n    maven { url \"https://jitpack.io\" }\r\n}\r\n\r\n\r\ndependencies {\r\n    //compile 'com.gitlab.lcoremodders:LucraftCore:22057cedd3'\r\n    //compile 'curse.maven:lucraft-core-230651:2841048'\r\n    //deobfCompile ('com.gitlab.lcoremodders:LucraftCore:5bec1f22')\r\n\r\n    //compile 'curse.maven:pymtech-316946:2706385' 316946\r\n    //compile 'curse.maven:lucraft-core-230651:3283571'\r\n    //compile 'curse.maven:heroesexpansion-267462:2762537'\r\n    //compile 'curse.maven:speedster-heroes-252318:2996769'\r\n    //compile 'curse.maven:pymtech-316946:2706385'\r\n    //compile 'curse.maven:endgame-addon-665792:3975622'\r\n\r\n    compile 'curse.maven:lantern-corps-universe-291355:3705877'\r\n    compile 'curse.maven:electroblobs-wizardry-265642:3679868'\r\n    compile 'com.gitlab.lcoremodders:LucraftCore:22057ced'\r\n    compile 'com.gitlab.lcoremodders:HeroesExpansion:860f629ed4'\r\n    compile 'com.gitlab.lcoremodders:SpeedsterHeroes:1e4b1fb951'\r\n\r\n    //compile 'com.gitlab.lcoremodders:LucraftCore:2c900f1a59'\r\n    //compile 'com.gitlab.lcoremodders:HeroesExpansion:bce809d27f'\r\n    //compile 'com.gitlab.lcoremodders:SpeedsterHeroes:8c7d5642e5'\r\n\r\n    //deobfCompile 'com.gitlab.lcoremodders:LucraftCore:2c900f1a59'\r\n    //deobfCompile 'com.gitlab.lcoremodders:HeroesExpansion:bce809d27f'\r\n    //deobfCompile 'com.gitlab.lcoremodders:SpeedsterHeroes:8c7d5642e5'\r\n    //deobfCompile (\"com.gitlab.lcoremodders:LucraftCore:22057cedd3\")\r\n    //deobfCompile files(\"lib/LucraftCore-1.12.2-2.2.4-deobf.jar\")\r\n}\r\n\r\ntask deobfJar(type: Jar) {\r\n    from sourceSets.main.output\r\n    classifier = 'deobf'\r\n    manifest {\r\n        attributes 'FMLCorePlugin': 'lucraft.mods.lucraftcore.core.LucraftCoreCoreMod', 'FMLCorePluginContainsFMLMod': 'true',\r\n                'FMLAT': 'lucraftcore_at.cfg'\r\n    }\r\n\r\n}\r\n\r\n\r\n\r\n\r\ntask devJar(type: Jar) {\r\n\tclassifier = 'dev'\r\n\tfrom sourceSets.main.output\r\n}\r\n\r\ntask sourcesJar(type: Jar) {\r\n\tclassifier = 'sources'\r\n\tfrom sourceSets.main.allSource\r\n}\r\n\r\nartifacts {\r\n\tarchives devJar\r\n\tarchives sourcesJar\r\n    archives deobfJar\r\n}\r\ntask compile {}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	(revision 64be63fa63f3a01dede010f020c6144505c106d4)
++++ b/build.gradle	(date 1673110458479)
+@@ -84,7 +84,8 @@
+     //compile 'curse.maven:pymtech-316946:2706385'
+     //compile 'curse.maven:endgame-addon-665792:3975622'
+ 
+-    compile 'curse.maven:lantern-corps-universe-291355:3705877'
++    //compile 'curse.maven:lantern-corps-universe-291355:3705877'
++
+     compile 'curse.maven:electroblobs-wizardry-265642:3679868'
+     compile 'com.gitlab.lcoremodders:LucraftCore:22057ced'
+     compile 'com.gitlab.lcoremodders:HeroesExpansion:860f629ed4'

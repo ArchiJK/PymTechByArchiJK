@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "pymtech:structure_shrinker" },
+        "facing=south": { "model": "pymtech:structure_shrinker", "y": 180 },
+        "facing=west":  { "model": "pymtech:structure_shrinker", "y": 270 },
+        "facing=east":  { "model": "pymtech:structure_shrinker", "y": 90 }
+    }
+}

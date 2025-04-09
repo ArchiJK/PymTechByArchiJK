@@ -1,0 +1,43 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_2_chest"
+  },
+  "pattern": [
+    "PCP",
+    "PHP",
+    "IZI"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_2_chest",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:growth_size_coil",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_chest",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEINTERTIUM"
+    },
+    "C": {
+      "item": "pymtech:growth_size_coil"
+    },
+    "H": {
+      "item": "pymtech:ant_man_chest"
+    },
+    "I": {
+      "item": "#INGOTSILVER"
+    },
+    "Z": {
+      "item": "#PLATESILVER"
+    }
+  },
+  "group": "pymtech:ant_man_2"
+}

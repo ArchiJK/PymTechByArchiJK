@@ -1,0 +1,36 @@
+{
+  "result": {
+    "item": "pymtech:ant_man_2_legs"
+  },
+  "pattern": [
+    "PIP",
+    "ILI",
+    "B B"
+  ],
+  "conditions": [
+    {
+      "item": "pymtech:ant_man_2_legs",
+      "type": "minecraft:item_exists"
+    },
+    {
+      "item": "pymtech:ant_man_legs",
+      "type": "minecraft:item_exists"
+    }
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "P": {
+      "item": "#PLATEINTERTIUM"
+    },
+    "B": {
+      "item": "#INGOTSILVER"
+    },
+    "I": {
+      "item": "#PLATESILVER"
+    },
+    "L": {
+      "item": "pymtech:ant_man_legs"
+    }
+  },
+  "group": "pymtech:ant_man_2"
+}

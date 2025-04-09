@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=bottom": { "model": "pymtech:half_slab_blue_sandstone" },
+        "half=top": { "model": "pymtech:upper_slab_blue_sandstone" }
+    }
+}
